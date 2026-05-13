@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TOP UP GAME</title>
+<title>TOP UP GAME STORE</title>
 
 <style>
 
@@ -15,30 +15,65 @@ body{
     color:white;
 }
 
-header{
+/* Navbar */
+.navbar{
     background:orange;
-    padding:20px;
-    text-align:center;
-    font-size:30px;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
     font-weight:bold;
     color:black;
 }
 
+.menu a{
+    color:black;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    color:orange;
+    text-shadow:0 0 20px orange;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* Card */
 .container{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    margin-top:40px;
-    gap:20px;
+    gap:25px;
+    padding:20px;
 }
 
 .card{
     background:#222;
-    width:250px;
+    width:270px;
     border-radius:15px;
     overflow:hidden;
     box-shadow:0 0 15px orange;
     text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
 }
 
 .card img{
@@ -49,10 +84,6 @@ header{
 
 .card h2{
     color:orange;
-}
-
-.card p{
-    font-size:18px;
 }
 
 .btn{
@@ -70,24 +101,65 @@ header{
     background:white;
 }
 
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    margin-top:40px;
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-🔥 TOP UP GAME STORE 🔥
-</header>
+<div class="navbar">
+    <div class="logo">TOP UP STORE</div>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Game</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>TOP UP GAME MURAH 🔥</h1>
+    <p>Top Up Diamond & UC Aman Dan Cepat</p>
+</div>
 
 <div class="container">
 
 <div class="card">
-<img src="https://wallpapercave.com/wp/wp7418476.jpg">
+<img src="https://images.unsplash.com/photo-1542751371-adc38448a05e">
 <h2>Free Fire</h2>
 <p>70 Diamond</p>
 <p>RM 5</p>
-<a href="#" class="btn">Beli</a>
+<a href="https://www.google.com" class="btn">Beli Sekarang</a>
 </div>
 
 <div class="card">
-<img src="https://
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420">
+<h2>Mobile Legends</h2>
+<p>86 Diamond</p>
+<p>RM 6</p>
+<a href="https://www.google.com" class="btn">Beli Sekarang</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8">
+<h2>PUBG Mobile</h2>
+<p>60 UC</p>
+<p>RM 7</p>
+<a href="https://www.google.com" class="btn">Beli Sekarang</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 Top Up Game Store
+</footer>
+
+</body>
+</html>
